@@ -1,0 +1,78 @@
+
+    
+
+nav{
+    width : 950px;
+    height : 40px;
+    color: rgb(202, 25, 149);
+    background-color: rgb(137, 196, 175);
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+   
+}
+
+
+.Slider{
+    width : 950px;
+    height :200px;
+    padding : 20px;
+    background-color: cyan;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(17, 14, 170);
+    background-image: url('3.jpg');
+    background-repeat: no-repeat, repeat;
+    background-size : cover; 
+}
+.Parasec{
+    text-align: center;
+    color: brown;
+}
+.pOne{
+    
+    width:970px;
+    height:150px;
+    color: blue;
+    text-align: justify;
+}
+.Box1{
+width:270px;
+height:250px;
+padding:20px;
+float:left;
+background-color: coral;
+margin: 10PX;
+background-image:url('system modle.png' );
+background-size: cover;
+
+}
+
+.Box2{
+    width:270px;
+height:250px;
+padding:20px;
+float:left;
+background-color: gray;
+margin: 10PX;
+
+}
+.Box3{
+    width:270px;
+height:250px;
+padding:20px;
+float:left;
+background-color: rgb(124, 12, 12);
+margin: 10PX;
+background-image: url('graph.png');
+background-size: cover;
+
+}
+footer{
+ width: 950px;
+ height: 80px;
+ padding:20px;
+ background-color: rgb(104, 90, 104);
+ text-align: center;
+ margin-top: 5px;
+}
