@@ -1,105 +1,141 @@
 import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Carousel from 'react-bootstrap/Carousel';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 function app() {
     return (
-       <div>
-        <nav className="navbar navbar-expand-lg bg-dark">
-  <div class="container ">
-    <a class="navbar-brand text-white" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item " href="#">Action</a></li>
-            <li><a class="dropdown-item " href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"/></li>
-            <li><a class="dropdown-item " href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled text-white">Disabled</a>
-        </li>
-      </ul>
+      <Container>
+      <Navbar bg='secondary' expand="lg">
       
-      
-    </div>
-  </div>
-</nav>
-
-<div className='container mt-4'>
-<div className="row">
-    <div className='col-sm-6 col-lg-5'>
-<p className='bg-light p-4 display-1'>900*400</p>
-</div>
-<div className='col-sm-6 col-lg-6'>
-<div className='col-sm-4 '>
-<div class="card" style={{width:'250px'}}>
-  <img src="..." class="card-img-top" alt="..."/>
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-</div>
-</div>
-</div>
-<div className='col-sm-4 col-lg-10'>
-  <p className='bg-secondary'> POES is having two sides cliend and sources sides</p>
-</div>
-<div className='row'>
-<div className='col-sm-4 '>
-<div class="card" style={{width:'250px'}}>
-  <img src="..." class="card-img-top" alt="..."/>
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-</div>
-<div className='col-sm-4'>
-<div class="card" style={{width:'250px'}}>
-  <img src="..." class="card-img-top" alt="..."/>
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-</div>
-<div className='col-sm-4'>
-<div class="card" style={{width:'250px'}}>
-  <img src="..." class="card-img-top" alt="..."/>
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-  </div>
-</div>
-</div>
-<div className='bg-dark' >
-  <p className='text-center text-light'>E-Mail to Poesinfo@gmail.com</p>
-</div>
- </div>
-</div>
+        <Navbar.Brand href="#home" text-align="center">POWER OPTIMIZER AND EFFICIENCY SYSTEM</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">Link</Nav.Link>
+            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Service</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+              About
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Contact</NavDropdown.Item>
+              <NavDropdown.Divider />
+              
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
         
-    );
-}
+    </Navbar>
+    
+     
+         <Row>
+        <Col >
+        <Carousel>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="https://gumlet.assettype.com/freepressjournal/2022-01/55cc2294-d5c7-4e12-be2f-5bdf005afe2f/power_plant_4349830_960_720.webp?format=webp&w=480&dpr=2.6"
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="https://assets.thehansindia.com/h-upload/2020/05/04/966656-thermal-power-plants.webp"
+          alt="Second slide"
+        />
 
-export default app
-;
+        <Carousel.Caption>
+         
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="https://media.gettyimages.com/photos/thermal-power-plant-picture-id1131689219?s=612x612"
+          alt="Third slide"
+        />
+
+        <Carousel.Caption>
+         
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>   
+    </Col>
+           <Col> <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" />
+      <Card.Body>
+        <Card.Title>INTRODUCTION</Card.Title>
+        <Card.Text>
+          It is a system which are used in the load side demand.Every system has seperate
+          voltage ceritia.In this project we have to find out where the voltage get drop
+          and comprise that.  
+        </Card.Text>
+        <Button variant="primary">More Details</Button>
+      </Card.Body>
+    </Card>
+    </Col>
+      </Row>
+      <Row> 
+        <div className="bg-secondary border p-5 text-center"> Some of the services which are considered in POES are given below </div> 
+    </Row>
+      <Row>
+        <Col>
+        <Card style={{ width: '18rem' }}>
+            <Card.Body>
+        <Card.Title>System model considered</Card.Title>
+        <Card.Text>
+        The model system used , where a primary load of 157kwh/d, 22kW peak is connected to the AC bus.  
+        </Card.Text>
+        <Button variant="primary">More Details</Button>
+      </Card.Body>
+    </Card>
+        </Col>
+        <Col>
+        <Card style={{ width: '18rem' }}>
+      
+      <Card.Body>
+        <Card.Title>Service</Card.Title>
+        <Card.Text>
+        You need a service provider with extensive industry knowledge and acumen.  
+   
+        </Card.Text>
+        <Button variant="primary">More Details</Button>
+      </Card.Body>
+      </Card>
+        </Col>
+     
+      <Col>
+        <Card style={{ width: '18rem' }}>
+      
+      <Card.Body>
+        <Card.Title>Inputs and assumptions of system model</Card.Title>
+        <Card.Text>
+        Where there was a peak of 8.2kW at the early hours  ... 
+        </Card.Text>
+        <Button variant="primary">More Details</Button>
+      </Card.Body>
+      </Card>
+        </Col>
+        </Row>
+        <Row> 
+        <div className="bg-secondary border text=center"> Email-poessre@gmail.com </div> 
+    </Row>
+      </Container> 
+          
+     
+  );
+}  
+   
+export default app;
